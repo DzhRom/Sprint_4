@@ -25,5 +25,6 @@ public class Locator {
      headerlyKogoSamokat - заголовок "Для кого самокат"
 
 
+
      */
      }
