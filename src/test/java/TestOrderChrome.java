@@ -54,7 +54,7 @@ public class TestOrderChrome {
     }
 
     @Test
-    public void test(){
+    public void testOrder(){
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
 

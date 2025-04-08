@@ -11,6 +11,7 @@ public class OrderPageTwo {
     private By buttonEndOrder = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
     private By buttonYesOrder = By.xpath(".//button[text()='Да']");
     private By orderCreated = By.xpath(".//div[@class='Order_ModalHeader__3FDaJ']");
+    private By headerlyKogoSamokat = By.xpath(".//div[@class='Order_Header__BZXOb']");
 
     public OrderPageTwo(WebDriver driver) {
         this.driver = driver;
@@ -49,5 +50,9 @@ public class OrderPageTwo {
 
     public String getOrderCreated(){
         return driver.findElement(orderCreated).getText();
+    }
+
+    public String getHeaderlyKogoSamokat(){
+        return driver.findElement(headerlyKogoSamokat).getText();
     }
 }

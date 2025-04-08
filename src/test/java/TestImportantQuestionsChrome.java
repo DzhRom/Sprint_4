@@ -7,7 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -38,7 +37,6 @@ public class TestImportantQuestionsChrome {
                 { "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.", "accordion__heading-6", ".//div[@id='accordion__panel-6']/p"},
                 { "Да, обязательно. Всем самокатов! И Москве, и Московской области.", "accordion__heading-7", ".//div[@id='accordion__panel-7']/p"},
         };
-
     }
 
     @Test

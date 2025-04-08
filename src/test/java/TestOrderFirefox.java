@@ -1,10 +1,8 @@
 import PageObject.OrderPageOne;
 import static org.hamcrest.CoreMatchers.startsWith;
-
 import PageObject.OrderPageTwo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.hamcrest.MatcherAssert;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,8 +10,6 @@ import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
-
-import java.util.concurrent.TimeUnit;
 
 @RunWith(Parameterized.class)
 public class TestOrderFirefox {
@@ -82,6 +78,7 @@ public class TestOrderFirefox {
 
         driver.quit();
     }
+
 
     @AfterTest
     public void tearDown(){
