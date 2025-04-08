@@ -7,6 +7,7 @@ public class PageObjectAddTask {
     private WebDriver driver;
     private By logoScooter = By.xpath(".//img[@alt='Scooter']");
     private By headerScooter = By.xpath(".//div[text()='Самокат ']");
+    private By logoYandex = By.xpath(".//img[@src='/assets/ya.svg']");
 
 
     public PageObjectAddTask(WebDriver driver) {
@@ -19,6 +20,10 @@ public class PageObjectAddTask {
 
     public String getHeaderScooter() {
         return driver.findElement(headerScooter).getText();
+    }
+
+    public void clickLogoYandex() {
+        driver.findElement(logoYandex).click();
     }
 
 
