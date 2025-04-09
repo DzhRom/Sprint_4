@@ -11,12 +11,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.Assert.assertNotEquals;
 
 @RunWith(Parameterized.class)
-public class TestFieldOrderName {
+public class TestFieldName {
     private String name;
     private String testName;
     private boolean isCheck;
 
-    public TestFieldOrderName(String name, String testName, boolean isCheck) {
+    public TestFieldName(String name, String testName, boolean isCheck) {
         this.name = name;
         this.testName = testName;
         this.isCheck = isCheck;
